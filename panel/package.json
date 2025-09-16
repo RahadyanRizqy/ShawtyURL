@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "otpauth": "^9.4.1",
+    "qrcode-generator": "^2.0.4",
+    "vhtml": "^2.2.0"
+  }
+}

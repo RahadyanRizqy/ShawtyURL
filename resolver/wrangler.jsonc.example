@@ -1,0 +1,18 @@
+{
+    "name": "shorturl-resolver",
+    "main": "worker.js",
+    "compatibility_date": "2025-09-12",
+
+    "vars": {
+        "DEFAULT_REDIRECT": "your-default-redirect-url"
+    },
+
+	"d1_databases": [
+		{
+			"binding": "SHORTLINKS",
+			"database_name": "SHORTLINKS",
+			"database_id": "your-database-id"
+		}
+	]
+}
+  

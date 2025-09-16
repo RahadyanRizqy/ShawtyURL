@@ -1,0 +1,5 @@
+CREATE TABLE shortlinks(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    code TEXT UNIQUE NOT NULL,
+    destination TEXT NOT NULL
+);

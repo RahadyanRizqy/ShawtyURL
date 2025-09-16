@@ -1,0 +1,8 @@
+panel/wrangler.jsonc
+resolver/wrangler.jsonc
+panel/node_modules
+resolver/node_modules
+unused/
+panel/.wrangler
+resolver/.wrangler
+wrangler.jsonc

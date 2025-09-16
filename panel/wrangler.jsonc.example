@@ -1,0 +1,25 @@
+{
+    "name": "shorturl-panel",
+    "main": "worker.js",
+    "compatibility_date": "2025-09-15",
+    "vars": {
+        "SECRET": "your-secret-key",
+        "DEFAULT_RESOLVER": "https://example.com",
+        "TOTP_ISSUER": "your-totp-issuer",
+        "TOTP_ACCOUNT": "admin",
+        "JWT_EXPIRY": 5
+    },
+    "kv_namespaces": [
+		{
+			"binding": "OTP",
+			"id": "your-otp-id"
+		}
+	],
+    "d1_databases": [
+		{
+			"binding": "SHORTLINKS",
+			"database_name": "SHORTLINKS",
+			"database_id": "your-database-id"
+		}
+	]
+}
