@@ -99,9 +99,9 @@ A serverless URL shortener built for Cloudflare Workers and D1 database. With on
    wrangler deploy
    ```
 
-## Post-deployment configuration on dashboard g(optional)
+## Post-deployment configuration on dashboard (optional)
 You may...
-- Setup QRCode authentication with Authy, Google Authenticator, and Ente
+- Setup QRCode authentication with Authy, Google Authenticator, and Ente (compulsory)
 - Use your own domain to redirect to the resolver
 - Use your own desired default redirect URL (to redirect unknown shortcodes)
 - Use your own desired domain with subdomain to access the panel
