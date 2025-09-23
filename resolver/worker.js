@@ -6,6 +6,7 @@ const HTML_HEADERS = { "Content-Type": "text/html;charset=UTF-8" };
 export default {
   async fetch(req, env) {
     const DEFAULT_REDIRECT = env.DEFAULT_REDIRECT;
+    const SHORTLINKS = env.SHORTLINKS;
     const url = new URL(req.url);
     const key = url.pathname.slice(1);
 
@@ -15,7 +16,7 @@ export default {
       return htmlResponse(defaultHTML(DEFAULT_REDIRECT));
     }
 
-    const row = await env.shawties.prepare("SELECT destination FROM shortlinks WHERE code = ?")
+    const row = await SHORTLINKS.prepare("SELECT destination FROM shortlinks WHERE code = ?")
       .bind(key)
       .first();
 
